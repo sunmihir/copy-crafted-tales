@@ -37,10 +37,10 @@ const ContentGenerator = () => {
   const [variations, setVariations] = useState<ContentVariation[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const platforms = ["WhatsApp", "Instagram", "Telegram", "YouTube", "Facebook", "Twitter", "LinkedIn"];
+  const platforms = ["WhatsApp", "Instagram", "Telegram", "YouTube", "Facebook", "Twitter"];
   const audiences = ["Friends", "Family", "Students", "Peers", "Followers", "Affiliaters", "Customers"];
   const languages = ["English", "Hindi", "Hinglish", "Spanish", "French"];
-  const tones = ["Friendly", "Professional", "Quirky", "Humorous", "Casual", "Formal"];
+  const tones = ["Friendly", "Quirky", "Humorous", "Casual", "Formal"];
 
   const generateVariations = () => {
     setIsGenerating(true);
@@ -144,7 +144,6 @@ Don't miss out - spaces are filling fast! ${getAudienceSpecificCTA()}`,
   const getToneSpecificEnding = () => {
     const endings = {
       Friendly: "Can't wait to see your success story! 🌟",
-      Professional: "Ready to take the next step in your journey?",
       Quirky: "Time to join the cool kids club! 😎 (Yes, we have cookies)",
       Humorous: "Warning: Side effects may include excessive success and happiness 😄",
       Casual: "Trust me, you'll thank yourself later! 🙌",
